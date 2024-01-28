@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Aplication Users Details</title>
+</head>
+<body>
+  <h1>Users Details</h1>
+  <table>
+      <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Password</th>
+          <th>ConfirmPassword</th>
+      </tr>
+      <tr>
+          {% for i in inf %}
+          <td>{{i.UserName}}</td>
+          <td>{{i.UserEmail}}</td>
+          <td>{{i.UserPassword}}</td>
+          <td>{{i.UserConfirmPassword}}</td>
+      </tr>
+      {% endFor %}
+  </table>
+</body>
+</html>
